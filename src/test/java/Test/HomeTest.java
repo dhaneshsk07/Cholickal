@@ -19,5 +19,15 @@ public class HomeTest extends BaseTest{
 		Assert.assertTrue(driver.findElement(By.xpath("//p[@id='name']")).isDisplayed());
 
 	}
+	
+	@Test(description="Test02")
+	public void clickTextRunOne() throws InterruptedException {
+		
+		HomePage pg=new HomePage(driver,wait);
+		pg.clickText();
+		pg.textBox();
+		Assert.assertTrue(driver.findElement(By.xpath("//p[@id='name']")).isDisplayed());
+
+	}
 
 }
