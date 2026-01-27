@@ -25,6 +25,7 @@ pipeline {
             }
         }
 
+/*
         stage('Publish Reports') {
             steps {
                 publishHTML([
@@ -35,7 +36,7 @@ pipeline {
                     alwaysLinkToLastBuild: true
                 ])
             }
-        }
+        }*/
     }
 
     post {
