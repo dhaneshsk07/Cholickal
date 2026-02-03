@@ -36,7 +36,7 @@ public class WebTablePage {
 		this.wait = wait;
 
 	}
-
+ 
 	// add ,edit,delete,search
 
 	// click add button
@@ -101,7 +101,7 @@ public class WebTablePage {
 	        }
 	   // }
 
-	    Assert.assertTrue(emailFound, "Expected email not found in WebTable");
+	    Assert.assertTrue(emailFound, "Expected email is found in WebTable");
 	}
 
 
