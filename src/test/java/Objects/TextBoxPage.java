@@ -1,15 +1,12 @@
 package Objects;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class HomePage  {
+public class TextBoxPage  {
 	WebDriver driver;
 	WebDriverWait wait;
 	
@@ -28,7 +25,7 @@ public class HomePage  {
 	String name,email,curAdd,perAdd;
 
 	
-	public HomePage(WebDriver driver,WebDriverWait wait){
+	public TextBoxPage(WebDriver driver,WebDriverWait wait){
 		
 		this.driver = driver;
 		this.wait=wait;
@@ -87,12 +84,6 @@ public class HomePage  {
 		    ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='submit']"))
 		);
 	userSubmit.click();
-	
-	
-
-	
-	
-	
 	
 	}
 	
