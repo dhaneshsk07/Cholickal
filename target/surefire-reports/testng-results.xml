@@ -1,11 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-28T03:25:02 IST" name="Suite" finished-at="2026-01-28T03:25:02 IST" duration-ms="7">
+  <suite started-at="2026-02-03T12:41:51 IST" name="Suite" finished-at="2026-02-03T12:42:21 IST" duration-ms="29660">
     <groups>
     </groups>
-    <test started-at="2026-01-28T03:25:02 IST" name="Test" finished-at="2026-01-28T03:25:02 IST" duration-ms="7">
+    <test started-at="2026-02-03T12:41:51 IST" name="Test" finished-at="2026-02-03T12:42:21 IST" duration-ms="29660">
+      <class name="Test.TextBoxTest">
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@7c729a55]" started-at="2026-02-03T12:41:51 IST" name="driverConnectionSetup" finished-at="2026-02-03T12:42:01 IST" duration-ms="9654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverConnectionSetup -->
+        <test-method signature="clickTextRun()[pri:0, instance:Test.TextBoxTest@7c729a55]" started-at="2026-02-03T12:42:01 IST" name="clickTextRun" description="Test01" finished-at="2026-02-03T12:42:02 IST" duration-ms="1367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTextRun -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@7c729a55]" started-at="2026-02-03T12:42:02 IST" name="tearDown" finished-at="2026-02-03T12:42:03 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@7c729a55]" started-at="2026-02-03T12:42:03 IST" name="driverConnectionSetup" finished-at="2026-02-03T12:42:09 IST" duration-ms="5834" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverConnectionSetup -->
+        <test-method signature="clickTextRunOne()[pri:0, instance:Test.TextBoxTest@7c729a55]" started-at="2026-02-03T12:42:09 IST" name="clickTextRunOne" description="Test02" finished-at="2026-02-03T12:42:10 IST" duration-ms="1133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTextRunOne -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@7c729a55]" started-at="2026-02-03T12:42:10 IST" name="tearDown" finished-at="2026-02-03T12:42:10 IST" duration-ms="218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.TextBoxTest -->
+      <class name="Test.WebTableTest">
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.WebTableTest@10e31a9a]" started-at="2026-02-03T12:42:10 IST" name="driverConnectionSetup" finished-at="2026-02-03T12:42:18 IST" duration-ms="8148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverConnectionSetup -->
+        <test-method signature="clickWebTableRun()[pri:0, instance:Test.WebTableTest@10e31a9a]" started-at="2026-02-03T12:42:18 IST" name="clickWebTableRun" description="TC_WebTableTest_01" finished-at="2026-02-03T12:42:21 IST" duration-ms="2701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickWebTableRun -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.WebTableTest@10e31a9a]" started-at="2026-02-03T12:42:21 IST" name="tearDown" finished-at="2026-02-03T12:42:21 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.WebTableTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

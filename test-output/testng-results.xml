@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-03T11:41:26 IST" name="Default suite" finished-at="2026-02-03T11:41:44 IST" duration-ms="18480">
+  <suite started-at="2026-02-03T12:41:14 IST" name="Default suite" finished-at="2026-02-03T12:41:30 IST" duration-ms="15708">
     <groups>
     </groups>
-    <test started-at="2026-02-03T11:41:26 IST" name="Default test" finished-at="2026-02-03T11:41:44 IST" duration-ms="18480">
-      <class name="Test.WebTableTest">
-        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.WebTableTest@2657d4dd]" started-at="2026-02-03T11:41:26 IST" name="driverConnectionSetup" finished-at="2026-02-03T11:41:36 IST" duration-ms="10645" status="PASS">
+    <test started-at="2026-02-03T12:41:14 IST" name="Default test" finished-at="2026-02-03T12:41:30 IST" duration-ms="15708">
+      <class name="Test.TextBoxTest">
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@5340477f]" started-at="2026-02-03T12:41:14 IST" name="driverConnectionSetup" finished-at="2026-02-03T12:41:22 IST" duration-ms="7577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverConnectionSetup -->
-        <test-method signature="clickWebTableRun()[pri:0, instance:Test.WebTableTest@2657d4dd]" started-at="2026-02-03T11:41:36 IST" name="clickWebTableRun" description="TC_WebTableTest_01" finished-at="2026-02-03T11:41:44 IST" duration-ms="7440" status="PASS">
+        <test-method signature="clickTextRun()[pri:0, instance:Test.TextBoxTest@5340477f]" started-at="2026-02-03T12:41:22 IST" name="clickTextRun" description="Test01" finished-at="2026-02-03T12:41:23 IST" duration-ms="1408" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickWebTableRun -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.WebTableTest@2657d4dd]" started-at="2026-02-03T11:41:44 IST" name="tearDown" finished-at="2026-02-03T11:41:44 IST" duration-ms="355" status="PASS">
+        </test-method> <!-- clickTextRun -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@5340477f]" started-at="2026-02-03T12:41:23 IST" name="tearDown" finished-at="2026-02-03T12:41:23 IST" duration-ms="259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Test.WebTableTest -->
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@5340477f]" started-at="2026-02-03T12:41:23 IST" name="driverConnectionSetup" finished-at="2026-02-03T12:41:28 IST" duration-ms="4903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverConnectionSetup -->
+        <test-method signature="clickTextRunOne()[pri:0, instance:Test.TextBoxTest@5340477f]" started-at="2026-02-03T12:41:28 IST" name="clickTextRunOne" description="Test02" finished-at="2026-02-03T12:41:29 IST" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickTextRunOne -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@5340477f]" started-at="2026-02-03T12:41:29 IST" name="tearDown" finished-at="2026-02-03T12:41:30 IST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Test.TextBoxTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

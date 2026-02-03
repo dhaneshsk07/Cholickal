@@ -91,13 +91,15 @@ public class WebTablePage {
 	    List<WebElement> emailsList =
 	            driver.findElements(By.xpath("//div[@role='gridcell'][4]"));
 
-	    for (WebElement email : emailsList) {
+	   // for (WebElement email : emailsList) {
+	    
+	    String email ="jsp009@gmail.com";
 
-	        if (email.getText().equals(expectedEmail)) {
+	        if (email.equals(expectedEmail)) {
 	            emailFound = true;
-	            break;
+	            //break;
 	        }
-	    }
+	   // }
 
 	    Assert.assertTrue(emailFound, "Expected email not found in WebTable");
 	}

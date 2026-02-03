@@ -29,7 +29,7 @@ public class BaseTest {
 		// driver.get("https://www.amazon.in/");
 
 		// driver.get("https://automationexercise.com");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 	}
 

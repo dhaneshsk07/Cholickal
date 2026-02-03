@@ -1,8 +1,5 @@
 package Test;
 
-
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import Ninaidh.Home.BaseTest;
 import Objects.WebTablePage;
@@ -19,11 +16,9 @@ public class WebTableTest extends BaseTest{
 		wpg.registrationForm("Joseph", "Alex", "jsp009@gmail.com","44","44000", "General");
 		wpg.clickRegistrationSubmit();
 		
+		//assertion
 		wpg.webPageTest01_Assertion();
 		
-		//asserting with gmail 
-		//Assert.assertTrue(driver.findElement(By.xpath("//div[@role='gridcell'][4]")).isDisplayed());
-
 	}
 	
 	
