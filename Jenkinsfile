@@ -27,30 +27,12 @@ pipeline {
             }
         }
 
-        stage('Rename Extent Report with Timestamp') {
-            steps {
-                script {
-                    def timestamp = sh(
-                        script: "date +%Y%m%d_%H%M%S",
-                        returnStdout: true
-                    ).trim()
-
-                    env.EXTENT_REPORT = "ExtentReport_${timestamp}.html"
-
-                    sh """
-                        mv ${REPORT_DIR}/ExtentReport.html \
-                           ${REPORT_DIR}/${EXTENT_REPORT}
-                    """
-                }
-            }
-        }
-
         stage('Publish Extent Report') {
             steps {
                 publishHTML([
                     reportDir: "${REPORT_DIR}",
-                    reportFiles: "${EXTENT_REPORT}",
-                    reportName: "Extent Automation Report",
+                    reportFiles: 'ExtentReport_*.html',
+                    reportName: 'Extent Automation Report',
                     keepAll: true,
                     alwaysLinkToLastBuild: true,
                     allowMissing: false
@@ -64,7 +46,7 @@ pipeline {
             echo "Pipeline completed for branch main"
         }
         failure {
-            echo "Tests failed! Check timestamped Extent report in Jenkins."
+            echo "Tests failed! Check Extent Report in Jenkins."
         }
     }
 }
