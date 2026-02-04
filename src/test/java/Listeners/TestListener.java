@@ -28,10 +28,19 @@ public class TestListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		ExtentTestManager.getTest().fail(result.getThrowable());
-		
-		
+
+	    // Get Extent test instance (Thread-safe)
+	    ExtentTest test = ExtentTestManager.getTest();
+
+	    // Log test name and status
+	    test.fail("Test Failed: " + result.getMethod().getMethodName());
+
+	    // Log full exception + stack trace
+	    if (result.getThrowable() != null) {
+	        test.fail(result.getThrowable());
+	    }
 	}
+
 
 	@Override
 	public void onFinish(ITestContext context) {
