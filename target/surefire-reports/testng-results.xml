@@ -1,47 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-05T02:11:41 IST" name="Suite" finished-at="2026-02-05T02:12:06 IST" duration-ms="25622">
+  <suite started-at="2026-02-05T03:12:55 IST" name="Suite" finished-at="2026-02-05T03:13:31 IST" duration-ms="36359">
     <groups>
     </groups>
-    <test started-at="2026-02-05T02:11:41 IST" name="Test" finished-at="2026-02-05T02:12:06 IST" duration-ms="25622">
+    <test started-at="2026-02-05T03:12:55 IST" name="Test" finished-at="2026-02-05T03:13:31 IST" duration-ms="36359">
       <class name="Test.TextBoxTest">
-        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T02:11:41 IST" name="driverConnectionSetup" finished-at="2026-02-05T02:11:48 IST" duration-ms="7550" status="PASS">
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T03:12:55 IST" name="driverConnectionSetup" finished-at="2026-02-05T03:13:12 IST" duration-ms="16749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverConnectionSetup -->
-        <test-method signature="clickTextRun()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T02:11:48 IST" name="clickTextRun" description="Test01" finished-at="2026-02-05T02:11:49 IST" duration-ms="760" status="PASS">
+        <test-method signature="clickTextRun()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T03:13:12 IST" name="clickTextRun" description="Test01" finished-at="2026-02-05T03:13:13 IST" duration-ms="869" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTextRun -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T02:11:49 IST" name="tearDown" finished-at="2026-02-05T02:11:49 IST" duration-ms="416" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T03:13:13 IST" name="tearDown" finished-at="2026-02-05T03:13:13 IST" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T02:11:49 IST" name="driverConnectionSetup" finished-at="2026-02-05T02:11:57 IST" duration-ms="7110" status="PASS">
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T03:13:13 IST" name="driverConnectionSetup" finished-at="2026-02-05T03:13:19 IST" duration-ms="6202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverConnectionSetup -->
-        <test-method signature="clickTextRunOne()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T02:11:57 IST" name="clickTextRunOne" description="Test02" finished-at="2026-02-05T02:11:57 IST" duration-ms="752" status="PASS">
+        <test-method signature="clickTextRunOne()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T03:13:19 IST" name="clickTextRunOne" description="Test02" finished-at="2026-02-05T03:13:20 IST" duration-ms="886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickTextRunOne -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T02:11:57 IST" name="tearDown" finished-at="2026-02-05T02:11:58 IST" duration-ms="180" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.TextBoxTest@4c163e3]" started-at="2026-02-05T03:13:20 IST" name="tearDown" finished-at="2026-02-05T03:13:20 IST" duration-ms="332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Test.TextBoxTest -->
       <class name="Test.WebTableTest">
-        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.WebTableTest@57bc27f5]" started-at="2026-02-05T02:11:58 IST" name="driverConnectionSetup" finished-at="2026-02-05T02:12:04 IST" duration-ms="6403" status="PASS">
+        <test-method is-config="true" signature="driverConnectionSetup()[pri:0, instance:Test.WebTableTest@57bc27f5]" started-at="2026-02-05T03:13:20 IST" name="driverConnectionSetup" finished-at="2026-02-05T03:13:28 IST" duration-ms="7113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- driverConnectionSetup -->
-        <test-method signature="clickWebTableRun()[pri:0, instance:Test.WebTableTest@57bc27f5]" started-at="2026-02-05T02:12:04 IST" name="clickWebTableRun" description="TC_WebTableTest_01" finished-at="2026-02-05T02:12:06 IST" duration-ms="2211" status="PASS">
+        <test-method signature="clickWebTableRun()[pri:0, instance:Test.WebTableTest@57bc27f5]" started-at="2026-02-05T03:13:28 IST" name="clickWebTableRun" description="TC_WebTableTest_01" finished-at="2026-02-05T03:13:31 IST" duration-ms="3065" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected email is found in WebTable expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected email is found in WebTable expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Objects.WebTablePage.webPageTest01_Assertion(WebTablePage.java:104)
+at Test.WebTableTest.clickWebTableRun(WebTableTest.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickWebTableRun -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.WebTableTest@57bc27f5]" started-at="2026-02-05T02:12:06 IST" name="tearDown" finished-at="2026-02-05T02:12:06 IST" duration-ms="204" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Test.WebTableTest@57bc27f5]" started-at="2026-02-05T03:13:31 IST" name="tearDown" finished-at="2026-02-05T03:13:31 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

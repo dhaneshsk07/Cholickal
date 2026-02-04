@@ -28,8 +28,6 @@ public class WebTablePage {
 
 	WebElement submit_btn;
 
-	// String name, email, curAdd, perAdd;
-
 	public WebTablePage(WebDriver driver, WebDriverWait wait) {
 
 		this.driver = driver;
@@ -83,7 +81,7 @@ public class WebTablePage {
 		submit_btn.click();
 	}
 
-	public void webPageTest01_Assertion() {
+	public void webPageTest01_Assertion(String email) {
 
 	    String expectedEmail = "jsp009@gmail.com";
 	    boolean emailFound = false;
@@ -93,10 +91,12 @@ public class WebTablePage {
 
 	   // for (WebElement email : emailsList) {
 	    
-	    String email ="jsp009@gmail.com";
+	   // String email ="jsp009@gmail.com";
 
 	        if (email.equals(expectedEmail)) {
 	            emailFound = true;
+	            System.out.println("ORIGINAL MAIL :" + email + " AND " +expectedEmail);
+	            
 	            //break;
 	        }
 	   // }

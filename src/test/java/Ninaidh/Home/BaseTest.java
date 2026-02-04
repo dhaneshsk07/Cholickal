@@ -9,7 +9,8 @@ import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
 
-import Reports.ExtentManager; 
+import Reports.ExtentManager;
+import Utils.DriverManager;
 
 import com.aventstack.extentreports.ExtentReports;
 
@@ -25,6 +26,8 @@ public class BaseTest {
 		WebDriverManager.chromedriver().clearResolutionCache().setup();
 
 		driver = new ChromeDriver();
+		DriverManager.setDriver(driver);
+
 
 		driver.manage().window().maximize();
 		// driver.get("https://www.demoblaze.com");
@@ -52,6 +55,11 @@ public class BaseTest {
 		if (driver != null) {
 			driver.quit();
 		}
+		
+		if (DriverManager.getDriver() != null) {
+            DriverManager.getDriver().quit();
+            DriverManager.unload();
+        }
 		extent.flush();
 	}
 	

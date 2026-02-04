@@ -23,7 +23,7 @@ public class WebTableTest extends BaseTest{
 		ExtentTestManager.getTest().info("Step3:Clicked Submit Button- Form Submitted");
 		
 		//assertion
-		wpg.webPageTest01_Assertion();
+		wpg.webPageTest01_Assertion("jsp009@gmail.com");
 		ExtentTestManager.getTest().info("Assertion Successfull");
 		
 	}

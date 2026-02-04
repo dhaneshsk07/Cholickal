@@ -1,10 +1,15 @@
 package Listeners;
 
 import com.aventstack.extentreports.ExtentTest;
+
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import Reports.ExtentTestManager;
+import Utils.DriverManager;
+import Utils.ScreenshotUtil;
 import Ninaidh.Home.BaseTest;
 
 public class TestListener extends BaseTest implements ITestListener {
@@ -39,7 +44,25 @@ public class TestListener extends BaseTest implements ITestListener {
 	    if (result.getThrowable() != null) {
 	        test.fail(result.getThrowable());
 	    }
-	}
+	    
+	    
+	    
+	    //----------S C R E E N S H O T-----O N-----F A I L U R E-----------------------
+	
+
+	        try {
+	            String screenshotPath = ScreenshotUtil.captureScreenshot(
+	                    DriverManager.getDriver(),
+	                    result.getMethod().getMethodName()
+	            );
+
+	            test.addScreenCaptureFromPath(screenshotPath, "Failure Screenshot");
+
+	        } catch (IOException e) {
+	            test.warning("Screenshot capture failed: " + e.getMessage());
+	        }
+	    }
+	
 
 
 	@Override
