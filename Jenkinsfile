@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     triggers {
         githubPush()
     }
@@ -11,7 +11,7 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'BROWSER', choices: ['chrome','firefox'], description: 'Choose browser')
+        choice(name: 'BROWSER', choices: ['chrome', 'firefox'], description: 'Choose browser')
     }
 
     environment {
@@ -19,38 +19,43 @@ pipeline {
     }
 
     stages {
+
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/dhaneshsk07/Cholickal.git', branch: "main"
+                git url: 'https://github.com/dhaneshsk07/Cholickal.git', branch: 'main'
             }
         }
 
         stage('Run Tests') {
             steps {
-                sh "mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=${params.BROWSER}"
-            }
-        }
-
-        stage('Publish Extent Report') {
-            steps {
-                publishHTML([
-                    reportDir: "${REPORT_DIR}",
-                    reportFiles: 'ExtentReport_*.html',
-                    reportName: 'Extent Automation Report',
-                    keepAll: true,
-                    alwaysLinkToLastBuild: true,
-                    allowMissing: false
-                ])
+                // Allow pipeline to continue even if tests fail
+                catchError(buildResult: 'FAILURE', stageResult: 'FAILURE') {
+                    sh "mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=${params.BROWSER}"
+                }
             }
         }
     }
 
     post {
         always {
-            echo "Pipeline completed for branch main"
+            echo "Publishing Extent Report (PASS or FAIL)"
+
+            publishHTML([
+                reportDir: "${REPORT_DIR}",
+                reportFiles: 'ExtentReport_*.html',
+                reportName: 'Extent Automation Report',
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
+            ])
         }
+
         failure {
-            echo "Tests failed! Check Extent Report in Jenkins."
+            echo "Tests failed! See Extent Automation Report above."
+        }
+
+        success {
+            echo "Tests passed successfully."
         }
     }
 }
