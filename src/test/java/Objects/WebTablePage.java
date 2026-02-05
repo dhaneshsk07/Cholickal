@@ -88,7 +88,7 @@ public class WebTablePage {
 
 	public void webPageTest01_Assertion(String email) {
 
-	    String expectedEmail = "jsp009@gmail.com";
+	    String expectedEmail = "nila119@gmail.com";
 	    boolean emailFound = false;
 
 	    List<WebElement> emailsList =

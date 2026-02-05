@@ -23,7 +23,7 @@ public class WebTableTest extends BaseTest{
     }
 	
 	@Test(description="TC_WebTableTest_01",dataProvider = "excelData")
-	public void clickWebTableRun(String firstName,String lastname,String email,String age,String salary,String dept) throws InterruptedException {
+	public void clickWebTableRun(String firstName,String lastname,String useremail,String age,String salary,String dept) throws InterruptedException {
 		driver.get("https://demoqa.com/webtables");
 		
 		WebTablePage wpg=new WebTablePage(driver,wait);
@@ -31,7 +31,7 @@ public class WebTableTest extends BaseTest{
 		ExtentTestManager.getTest().info("Step1:Clicked on Add Button");
 		
 		//wpg.registrationForm("Joseph", "Alex", "jsp009@gmail.com","44","44000", "General");
-		wpg.registrationForm(firstName, lastname, email, age, salary, dept);
+		wpg.registrationForm(firstName, lastname, useremail, age, salary, dept);
 		System.out.println("Running with data: " );
 
 		ExtentTestManager.getTest().info("Step2:Registration form all fields filled");
@@ -40,13 +40,14 @@ public class WebTableTest extends BaseTest{
 		ExtentTestManager.getTest().info("Step3:Clicked Submit Button- Form Submitted");
 		
 		//assertion
-		wpg.webPageTest01_Assertion("jsp009@gmail.com");
-		ExtentTestManager.getTest().info("Assertion Successfull");
+		ExtentTestManager.getTest().info("Assertion Values : " + "Expected email : nila119@gmail.com " + " and Actual email : " + useremail);
+		wpg.webPageTest01_Assertion(useremail);
+		
 		
 		  ExtentTestManager.getTest().info("Test Data Used:");
 		  ExtentTestManager.getTest().info("First Name: " + firstName);
 		  ExtentTestManager.getTest().info("Last Name: " + lastname);
-		  ExtentTestManager.getTest().info("Email: " + email);
+		  ExtentTestManager.getTest().info("Email: " + useremail);
 		  ExtentTestManager.getTest().info("Age: " + age);
 		  ExtentTestManager.getTest().info("Salary: " + salary);
 		  ExtentTestManager.getTest().info("Department: " + dept);

@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="Test.TextBoxTest">
+      <class name="Test.WebTableTest">
         <methods>
-          <include name="clickTextRun"/>
+          <include name="clickWebTableRun" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="driverConnectionSetup"/>
         </methods>
-      </class> <!-- Test.TextBoxTest -->
+      </class> <!-- Test.WebTableTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
