@@ -39,13 +39,13 @@ public class BaseTest {
 		// driver.get("https://www.demoblaze.com");
 		
 		//Explicit Wait for all classes
-		 wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		 wait = new WebDriverWait(driver, Duration.ofSeconds(60));
 
 		driver.get("https://demoqa.com/elements"); // real working url
 		// driver.get("https://www.amazon.in/");
 
 		// driver.get("https://automationexercise.com");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
 
 	}
