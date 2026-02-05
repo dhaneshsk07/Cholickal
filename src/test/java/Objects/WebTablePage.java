@@ -3,11 +3,14 @@ package Objects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import Utils.AdBlockerUtil;
 
 public class WebTablePage {
 	WebDriver driver;
@@ -35,6 +38,7 @@ public class WebTablePage {
 
 	}
  
+
 	// add ,edit,delete,search
 
 	// click add button
@@ -77,6 +81,7 @@ public class WebTablePage {
 	// -------------------------------------------------------
 
 	public void clickRegistrationSubmit() {
+		
 		submit_btn = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='submit']")));
 		submit_btn.click();
 	}

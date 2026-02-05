@@ -81,7 +81,8 @@ public class TextBoxPage  {
 	//-----Submit Button
 	//userSubmit=driver.findElement(By.xpath("//button[@id='submit']"));
 	userSubmit = wait.until(
-		    ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='submit']"))
+		    //ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='submit']"))
+		    ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='submit']"))
 		);
 	userSubmit.click();
 	
